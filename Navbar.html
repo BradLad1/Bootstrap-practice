@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        section{
+            padding: 60px 0;
+        }
+    </style>
+
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-light navbar-dark bg-primary"> <!--Expands the navbar but only when its at  medium scrren
+    
+        navbar-light will make navbar links have darker colour 
+        
+        navbar-dark will highlight the navbar links
+    -->
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand "> <!--Tags us to the 
+                intro section-->
+                <span class="fw-bold text-secondary">Net Ninja Pro-the book</span>
+
+            </a>
+            <!--Toggle button for mobile nav-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+            aria-controls="#main-nav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> 
+            <!--The button will click and collpase anything that has is in the id of main-nav -->
+        </button>
+        <!--Navbar links -->
+        <div class="collapse navbar-collapse justify-content-end align-center"
+        id="main-nav">
+
+            <ul class="navbar-nav ">
+
+                <li class="nav-item">
+                    <a href="#topics" class="nav-link">About the book</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Get in Touch</a>
+                </li>
+
+                <li class="nav-item d-md-none"><!--This getd disaplyed when tjhe screen is at a medium size-->
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+
+                <li class="nav-item ms-2 d-none d-md-inline"><!--The button will not be displayed when the screen is at medium-->
+                    <a class="btn btn-secondary" href="#pricing" >Buy now</a>
+                </li>
+                <!--These are all the links of that are in main nav-->
+            </ul>
+        </div>
+
+        <!--Navbar links -->
+
+        </div>
+    </nav>
+     <!--Navbar-->
+    <!--Main image & intro text-->
+    <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">Black-Belt</div>
+                        <div class="display-5 text-muted">Your coding skills</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, consequuntur. Dolore aut asperiores ut. Debitis quasi libero et incidunt architecto porro quas impedit laudantium. Aut nisi error 
+                        suscipit tempore placeat.</p>
+                        <a href="#pricing" class = "btn btn-secondary btn-lg">Buy now</a>
+                </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+                <img class ="img-fluid"src="assets/ebook-cover.png" alt="e book cover"> <!--"img-fluid" will make the image fluid and be resposive with the website -->
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Pricing plans-->
+
+    <!--topics at a glance-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
