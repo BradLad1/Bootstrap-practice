@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <style>
+        section{
+            padding: 60px 0;
+        }
+    </style>
+
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-light"> 
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand ">
+                <span class="fw-bold text-secondary">
+                    <i class="bi bi-book-half"></i>
+                    Net Ninja Pro-the book
+                </span>
+
+            </a>
+            <!--Toggle button for mobile nav-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> 
+        </button>
+        <!--Navbar links -->
+        <div class="collapse navbar-collapse justify-content-end align-center"
+        id="main-nav">
+
+            <ul class="navbar-nav ">
+
+                <li class="nav-item">
+                    <a href="#topics" class="nav-link">About the book</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Get in Touch</a>
+                </li>
+
+                <li class="nav-item d-md-none">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+
+                <li class="nav-item ms-2 d-none d-md-inline">
+                    <a class="btn btn-secondary" href="#pricing" >Buy now</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!--Navbar links -->
+
+        </div>
+    </nav>
+     <!--Navbar-->
+    <!--Main image & intro text-->
+    <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">Black-Belt</div>
+                        <div class="display-5 text-muted">Your coding skills</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, consequuntur. Dolore aut asperiores ut. Debitis quasi libero et incidunt architecto porro quas impedit laudantium. Aut nisi error 
+                        suscipit tempore placeat.</p>
+                        <a href="#pricing" class = "btn btn-secondary btn-lg">Buy now</a>
+                <!--open sidebar/offcanvas-->
+               <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas"
+               role="button" aria-controls="sidebar">
+                        Explore other buttons
+                        <!--The href= is used to say what the reference is
+                        we toogle of canvas 
+                        aria-controls="sidebar" means we control sidebar
+                        -->
+            </a>
+               
+               
+                <!--open sidebar/offcanvas-->
+
+                    </div>
+
+            <div class="col-md-5 text-center d-none d-md-block">
+            <!--Tooltip-->
+            <span class="tt" data-bs-placement="bottom" title="Net Ninja Book COVER">
+                <img class ="img-fluid"src="assets/ebook-cover.png" alt="e book cover"> <!--"img-fluid" will make the image fluid and be resposive with the website -->
+            </span>
+      <!--Tooltip-->
+
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--Pricing plans-->
+     
+    <section id="pricing" class="bg-light mt-5">
+      <!--We use this section element to take us to the pricing section -->
+      <div class="container-lg">
+        <div class="text-center">
+            <h2>Pricing plans</h2>
+            <p class="lead text-muted">Choose a pricing plan to suit you </p><!--Lead makes the text bigger-->
+        </div>
+
+        
+        <div class="row my-5 justify-content-center align-items-center g-0"> 
+        <!--
+            "g- is for graps we can do g-0 to 5 0 for no gap for 5 for a large gap"
+            -"justify-content-center" will put the content horzintolly in the center
+            -"align-items-center" will alaign the content vertically in the center
+        -->
+        <div class="col-8 col-lg-4 col-xl-3">
+            <!--
+                Col-8 is the default
+                col-lg-4 is for large screens 
+                col-xl-3 is for small screens--> 
+            <!--This is for creating the card-->
+            <div class="card border-0"> <!--border-0 to 5 will change how much the border is seen with 5  making the border  thicker and show more
+                while 0 removing the border entirely -->
+                <div class="card-body py-4 text-center">
+                        <h4 class="card-title"> Starter Edition</h4>
+                        <p class="lead-card-subtitle">Ebook download only</p>
+                        <p class="display-5 my-4 text-primary fw-bold"> $12.99</p>
+                        <p class="card-text mx-5 text-muted d-none d-none d-lg-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Voluptas quod soluta autem qui, laudantium earum 
+                            dignissimos rerum eos, exercitationem tenetur facere sed pariatur id mollitia, tempore et cum voluptatem repellat.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3"> Buy Now</a>
+                </div>
+            </div>
+                <!--
+                    -"justify-content-center" will put the content horzintolly in the center
+                    -"align-items-center" will alaign the content vertically in the center
+                -->
+        <!--This is for creating the card-->
+        </div>
+
+
+        <div class="col-9 col-lg-4 ">
+                    
+            <div class="card border-primary border-2"> 
+                <div class="card-header text-center text-primary"> Most Popular</div>
+                <div class="card-body py-5 text-center">
+                        <h4 class="card-title"> Complete Edition</h4>
+                        <p class="lead-card-subtitle">Ebook download & Updateds</p>
+                        <p class="display-4 my-4 text-primary fw-bold"> $18.99</p>
+
+                        <p class="card-text mx-5 text-muted d-none d-none d-lg-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Voluptas quod soluta autem qui, laudantium earum 
+                            dignissimos rerum eos, exercitationem tenetur facere sed pariatur id mollitia, tempore et cum voluptatem repellat.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3"> Buy Now</a>
+                </div>
+            </div>
+            
+
+     
+        </div>
+
+
+
+
+
+        <div class="col-8 col-lg-4 col-xl-3">
+         
+            <div class="card border-0">
+                <div class="card-body py-4 text-center">
+                        <h4 class="card-title"> Ultimate Edition</h4>
+                        <p class="lead-card-subtitle"> download,updates and extras</p>
+                        <p class="display-5 my-4 text-primary fw-bold"> $24.99</p>
+                        <p class="card-text mx-5 text-muted d-none d-none d-lg-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Voluptas quod soluta autem qui, laudantium earum 
+                            dignissimos rerum eos, exercitationem tenetur facere sed pariatur id mollitia, tempore et cum voluptatem repellat.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3"> Buy Now</a>
+                </div>
+            </div>
+
+
+
+    </div>     
+            
+    </section>
+
+    <!--Pricing plans-->
+
+
+
+    <!--topics at a glance-->
+    <section id="topics"> 
+        <div class="container-md">
+            <div class="text-center">
+                <h2>Inside the Book</h2>
+                <p class="lead text-muted"> A glance at what you will lean</p>
+            </div>
+            <div class="row my-5 g-5  align-items-center">
+                <div class="col-6 col-lg-4">
+                    <img src="/assets/kindle.png" alt="kindle" class="img-fluid">
+                </div>
+
+                <!--accordion-->
+                    <div class="accordion" id="chapters">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-1">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#chapter-1"
+                                aria-controls="chapter-1"
+                                 aria-expanded="true"> Chapter 1- Your first web page</button>
+                            </h2>
+                            <div id="chapter-1" class="accordion-collapse collapse " 
+                            aria-labelledby="heading-1" data-bs-parent="#chapters">
+                                                        <!--data-bs-parent="#chapters" will tell us what is the parent of the accordion  -->
+                          
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam 
+                                    iure architecto veritatis aliquam non, fugit labore accusamus 
+                                    sequi a nemo dolore voluptas repellat eaque, 
+                                    possimus laborum deserunt natus, sed saepe!
+                        <!--This accordion is going to collpase and toggle chapter-1 as it controls it and targets it-->
+                        <!--Chapter 1-->
+                                </p>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-2">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#chapter-2"
+                                aria-controls="chapter-2"
+                                 aria-expanded="true"> Chapter 2</button>
+                            </h2>
+                            <div id="chapter-2" class="accordion-collapse collapse " 
+                            aria-labelledby="heading-3" data-bs-parent="#chapters">
+                                                        <!--data-bs-parent="#chapters" will tell us what is the parent of the accordion  -->
+                          
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam 
+                                    iure architecto veritatis aliquam non, fugit labore accusamus 
+                                    sequi a nemo dolore voluptas repellat eaque, 
+                                    possimus laborum deserunt natus, sed saepe!
+                        <!--This accordion is going to collpase and toggle chapter-1 as it controls it and targets it-->
+                        <!--Chapter 1-->
+                                </p>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-3">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#chapter-3"
+                                aria-controls="chapter-3"
+                                 aria-expanded="true"> Chapter 3</button>
+                            </h2>
+                            <div id="chapter-3" class="accordion-collapse collapse " 
+                            aria-labelledby="heading-3" data-bs-parent="#chapters">
+                                                        <!--data-bs-parent="#chapters" will tell us what is the parent of the accordion  -->
+                          
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam 
+                                    iure architecto veritatis aliquam non, fugit labore accusamus 
+                                    sequi a nemo dolore voluptas repellat eaque, 
+                                    possimus laborum deserunt natus, sed saepe!
+                        <!--This accordion is going to collpase and toggle chapter-1 as it controls it and targets it-->
+                        <!--Chapter 1-->
+                                </p>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-4">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#chapter-4"
+                                aria-controls="chapter-4"
+                                 aria-expanded="true"> Chapter 4</button>
+                            </h2>
+                            <div id="chapter-4" class="accordion-collapse collapse " 
+                            aria-labelledby="heading-3" data-bs-parent="#chapters">
+                                                        <!--data-bs-parent="#chapters" will tell us what is the parent of the accordion  -->
+                          
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam 
+                                    iure architecto veritatis aliquam non, fugit labore accusamus 
+                                    sequi a nemo dolore voluptas repellat eaque, 
+                                    possimus laborum deserunt natus, sed saepe!
+                        <!--This accordion is going to collpase and toggle chapter-1 as it controls it and targets it-->
+                        <!--Chapter 1-->
+                                </p>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-5">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#chapter-5"
+                                aria-controls="chapter-5"
+                                 aria-expanded="true"> Chapter 5</button>
+                            </h2>
+                            <div id="chapter-5" class="accordion-collapse collapse " 
+                            aria-labelledby="heading-5" data-bs-parent="#chapters">
+                                                        <!--data-bs-parent="#chapters" will tell us what is the parent of the accordion  -->
+                          
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam 
+                                    iure architecto veritatis aliquam non, fugit labore accusamus 
+                                    sequi a nemo dolore voluptas repellat eaque, 
+                                    possimus laborum deserunt natus, sed saepe!
+                        <!--This accordion is going to collpase and toggle chapter-1 as it controls it and targets it-->
+                        <!--Chapter 1-->
+                                </p>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                        
+
+                        
+                         </div>
+                         
+                         
+                <!--accordion-->
+
+            </div>
+        </div>
+    </section>
+    <!--topics at a glance-->
+
+
+
+
+
+    <!--Reviews list-->
+    <section id="reviews" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center">
+            <h2 class="text-center"><i class="bi bi-stars"></i>
+                Book reviews</h2>
+            <p class="Lead">what my students think about the book</p>
+
+            <div class="row justify-content-center my-5"> <!-- justify-content-center will always keep the content in the center-->
+                    <div class="col-lg-8">
+                        <div class="list-group"><!--This creates the list group-->
+                            <div class="list-group-item py-3"><!--list-group-item this creates the a list group-->
+                                <div class="pb-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h5 class="mb-1">A good read</h5>
+                                <p class="mb-1">Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Impedit vel ab repellat 
+                                    aliquam, aliquid veritatis excepturi deserunt 
+                                    perspiciatis facere vitae corporis suscipit perferendis
+                                     consectetur similique, id quo obcaecati fuga quia?
+                                    </p>
+                                    <small>Review by mario</small>
+                            </div>
+                        </div>
+
+                        <div class="list-group"><!--This creates the list group-->
+                            <div class="list-group-item py-3">
+                                <div class="pb-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h5 class="mb-1">A good read</h5>
+                                <p class="mb-1">Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Impedit vel ab repellat 
+                                    aliquam, aliquid veritatis excepturi deserunt 
+                                    perspiciatis facere vitae corporis suscipit perferendis
+                                     consectetur similique, id quo obcaecati fuga quia?
+                                    </p>
+                                    <small>Review by mario</small>
+                            </div>
+                        </div>
+
+                        <div class="list-group"><!--This creates the list group-->
+                            <div class="list-group-item py-3">
+                                <div class="pb-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h5 class="mb-1">A good read</h5>
+                                <p class="mb-1">Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Impedit vel ab repellat 
+                                    aliquam, aliquid veritatis excepturi deserunt 
+                                    perspiciatis facere vitae corporis suscipit perferendis
+                                     consectetur similique, id quo obcaecati fuga quia?
+                                    </p>
+                                    <small>Review by mario</small>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Contact form-->
+<!--Form-control, form-label, form-select, input-group, input-group-inyrcy -->
+
+<section id="contact"><!--This section that has the id of contact will be where you go when u click get in touch-->
+    <div class="container-lg">
+        <div class="text-center">
+            <h2>Get in touch</h2>
+            <p class="lead">Questions to ask. Fill out form directly</p>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+
+                <form>
+                    <!--class="form-control" is used to style elements such a elements to provide a consistent and clean apperance-->
+                    <label for="email" class="form-label">Email Adress here</label>
+
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-person-fill"></i>
+                        </span>
+                        <input type="email" class="form-control" id="email" placeholder="e.g. mario@gmail.com">
+                    
+                    
+                    <!--Tooltip-->
+                    <span class="input-group-text">
+                        <span class="tt" data-bs-placement="top" title="Enter Email Address">
+                        <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+                    </span>
+                   <!--Tooltip-->
+                    </div>
+
+
+                    <label for="email" class="form-label">Name:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </span>                        
+                        <input type="email" class="form-control" id="email" placeholder="e.g. mario@gmail.com">
+                        <span class="input-group-text">
+                            <span class="tt" data-bs-placement="bottom" title="Enter Name">
+                            <i class="bi bi-question-circle text-muted"></i>
+                        </span>
+                        </span>
+                    </div>
+                    
+
+                    <label for="subject" class="form-label"> What is your question about</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </span>   
+                    <select class="form-select" id="subject">
+                        <option value="pricing" selected>pricing query</option>
+                        <option value="content">content query</option>
+                        <option value="other">other query</option>
+                    </select>
+                </div>
+
+<!--A form-floating will put the label inside the textarea -->
+                    <div class="form-floating mb-4 mt-5">
+                        <textarea class="form-control" id="query" cols="30" rows="10" style="height:140px;"></textarea>
+                        <label for="query" class="form-label">your query...</label>
+                    </div>
+                    <div class="mb-4 text-center">
+                        <button type="submit" class="btn btn-primary">Submit </button>
+                    </div>
+                    <!--Input groups are when we put a image on the left,right or middle then have a text box next to it-->
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Form-control, form-label, form-select, input-group, input-group-inyrcy -->
+
+
+
+
+
+    <!--Get updates/modal trigger-->
+<section class="bg-light">
+    <div class="contianer">
+        <div class="text-center">
+            <h2>Stay in the loop</h2>
+            <p class="lead">Get latest updates of what happened</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="lead-muted my-4">
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Explicabo dolores rerum 
+                        repellendus, tempore voluptate debitis minima 
+                        vero aliquam, nihil ut est. Dolorem sit quia, 
+                        odit quam accusantium eligendi dolorum iste?
+                    </p>
+
+                    <button class="btn btn-primary" data-bs-toggle="modal"  
+                    data-bs-target="#reg-modal">
+                    <!--
+                        data-bs-toggle: What we are toggling
+                        data-bs-target: The id we are toggling 
+                    -->
+                Register for updates
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Modal itself-->
+<div class="modal fade" id="reg-modal" tabindex="-1"
+aria-labelledby="modal-title" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Get latest updates</h5>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+        </div>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Aut hic nesciunt inventore 
+                saepe soluta aspernatur 
+                repellat quam aperiam sunt velit reiciendis 
+                ea quo illum, necessitatibus sequi labore 
+                tempore eaque dolores.</p>
+                <label for="modal-email" class="form-label"> Your Email address</label>
+                <input type="email" class="form-control" id="modal-email" placeholder="e.g @bradamankwah45t@gmail.com">
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--
+    tabindex="": will change the tab index of the modal
+    aria-labelledby: Can be the title of modal
+    aria-hidden: Can hide the modal when set true so it doesn't appear on the page
+data-bs-dismiss: Will tell us what we need to dismiss
+-->
+<!--Modal itself-->
+
+    <!--Get updates/modal trigger-->
+
+    <!--offcanvas-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar"
+aria-labelledby="sidebar-label">
+<!--offcanvas : Will create the offcanvas 
+    offcanvas-start: will place the offcanvas at the left
+    offcanvas-end:places offcanvas at the right
+    offcanvas-top: place offcanvas at the top
+    offcanvas-bottom: places offcanvas at the bottom
+-->
+   <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="sidebar-label">
+        my box made with offcanvas
+    </h5>
+    <button type="button"  class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+    </button>
+    <div class="offcanvas-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Vitae laborum minima nesciunt temporibus 
+            laboriosam optio nulla voluptatum asperiores illum sed. 
+            Placeat dolores 
+            consequatur similique temporibus 
+            debitis a! Accusamus, inventore accusantium?</p>
+    </div>
+</div>
+    <!--Dropdown-->
+    <div class="dropdown mt-3">
+        <button type="button"  class=" btn btn-secondary dropdown-toggle" 
+        id="book-dropdown" data-bs-toggle="dropdown">
+            Choose a book title
+            <!--
+                dropdown-toggle: will style the button as a dropdown 
+                data-bs-toggle="dropdown": will toggle the dropdown
+            -->
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                <li><a href="#" class="dropdown-item">Become a react superhero</a></li>
+
+                <li><a href="#" class="dropdown-item">Conqueor vue js</a></li>
+
+                <li><a href="#" class="dropdown-item">Compare the net js</a></li>
+
+            </ul>
+        </div>
+             <!--Dropdown-->
+</div>
+    <!--offcanvas-->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    
+    </script>
+    <script>
+          const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t =>{
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+</html>
